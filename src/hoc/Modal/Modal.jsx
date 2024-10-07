@@ -10,22 +10,19 @@ export default function Modal({
   className, // Дополнительный класс для общей обёртки
   contentClassName, // Дополнительный класс для обёртки контента
 }) {
-  const handleClose = () => {
-    onClose();
-  };
-
-  const handleKeyDown = (e) => {
-    if (e.code === "Escape") onClose();
-  };
 
   useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.code === "Escape") onClose();
+    };
+    
     document.addEventListener("keydown", handleKeyDown);
-  }, []);
+  }, [onClose]);
 
   return shown ? (
     <Portal>
       <div className={cn(styles.root, className)}>
-        <div onClick={handleClose} className={styles.backdrop}></div>
+        <div onClick={onClose} className={styles.backdrop}></div>
         <div className={cn(styles.content, contentClassName)}>{children}</div>
       </div>
     </Portal>

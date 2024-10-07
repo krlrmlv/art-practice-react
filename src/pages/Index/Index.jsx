@@ -3,11 +3,10 @@ import Popup from "../../components/Popup/Popup";
 import Modal from "../../hoc/Modal/Modal";
 
 import { Link, useSearchParams } from "react-router-dom";
-import ArticleGrid from "../../components/ArticleGrid/ArticleGrid";
 
 export default function Index() {
   const [isOpen, setIsOpen] = useState(false);
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams] = useSearchParams();
 
   useEffect(() => {
     if (searchParams.get("popup")) {
@@ -27,7 +26,7 @@ export default function Index() {
       <Modal shown={isOpen} onClose={() => setIsOpen(false)}>
         <Popup onClose={() => setIsOpen(false)} />
       </Modal>
-<hr />
+      <hr />
       <Link to="/articles">Articles</Link>
     </>
   );
