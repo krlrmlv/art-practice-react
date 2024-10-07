@@ -56,6 +56,11 @@ jobs:
       - name: Build with NPM or Yarn
         run: ${{ steps.detect-package-manager.outputs.runner }} build
 
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build
+
   deploy:
     environment:
       name: github-pages
