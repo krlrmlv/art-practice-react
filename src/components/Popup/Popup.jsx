@@ -1,9 +1,6 @@
-export default function Popup({
-    onClose, // Функция закрытия
-  }) {
+export default function Popup() {
     return (
       <div>
-        <button onClick={onClose}>x</button>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
           repellat exercitationem officiis ab voluptates distinctio, ratione
