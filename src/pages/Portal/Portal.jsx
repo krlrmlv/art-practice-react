@@ -19,7 +19,7 @@ export default function PortalPage() {
 
       <hr />
 
-      <Link to="/?popup=id1">Link to open popup id1 </Link>
+      <Link to="./?popup=id1">Link to open popup id1 </Link>
 
       <Modal id="id1">
         <Popup />
