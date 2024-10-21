@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Index from './pages/Index/Index';
