@@ -1,9 +1,9 @@
 const path = require('path');
 module.exports = {
+  output: {
+    publicPath: '/art-practice-react/'
+  },
   webpack: {
-    output: {
-      publicPath: '/art-practice-react/',
-    },
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
