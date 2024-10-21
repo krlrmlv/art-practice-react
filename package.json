@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "PUBLIC_URL=https://krlrmlv.github.io/art-practice-react craco build",
+    "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
   },
@@ -39,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "homepage": "."
 }
