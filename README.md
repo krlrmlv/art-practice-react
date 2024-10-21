@@ -8,6 +8,14 @@ To start your development, you can run this command:
 yarn && yarn start
 ```
 
+Github pages https://krlrmlv.github.io/art-practice-react
+
+Custom workflow [build.yml](.github/workflows/build.yml)
+
+### Warning
+
+Don't use the [browserRouter](https://reactrouter.com/en/main/routers/create-browser-router), use [hashRouter](https://reactrouter.com/en/main/routers/create-hash-router) instead
+
 ## Available Scripts
 
 In the project directory, you can run:
