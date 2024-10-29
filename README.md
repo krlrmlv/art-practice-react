@@ -1,5 +1,7 @@
 # Getting Started
 
+Github pages https://krlrmlv.github.io/art-practice-react
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 To start your development, you can run this command:
@@ -8,13 +10,15 @@ To start your development, you can run this command:
 yarn && yarn start
 ```
 
-Github pages https://krlrmlv.github.io/art-practice-react
+## Deployment
 
-Custom workflow [build.yml](.github/workflows/build.yml)
+A few Steps to use github actions: 
 
-### Warning
+Create custom workflow [build.yml](.github/workflows/build.yml)
 
-Don't use the [browserRouter](https://reactrouter.com/en/main/routers/create-browser-router), use [hashRouter](https://reactrouter.com/en/main/routers/create-hash-router) instead
+Write homepage in your [package.json](/package.json)
+
+Don't use the [browserRouter](https://reactrouter.com/en/main/routers/create-browser-router), use [hashRouter](https://reactrouter.com/en/main/routers/create-hash-router) instead ( it's atual only for useing react-router )
 
 ## Available Scripts
 
