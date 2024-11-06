@@ -1,13 +1,14 @@
 import './App.css';
 import { createHashRouter, RouterProvider } from 'react-router-dom';
-import Index from './pages/Index/Index';
 import ArticlePage from './pages/Articles';
 import PortalPage from './pages/Portal/Portal';
+import IndexPage from './pages/Index/Index';
+import MediaQueriesPage from './pages/MediaQueries/Index';
 
 const router = createHashRouter([
   {
     path: "/",
-    element: <Index />,
+    element: <IndexPage />,
   },
   {
     path: "/articles",
@@ -16,6 +17,10 @@ const router = createHashRouter([
   {
     path: "/portal",
     element: <PortalPage />,
+  },
+  {
+    path: "/media-queries",
+    element: <MediaQueriesPage />,
   },
 ]);
 

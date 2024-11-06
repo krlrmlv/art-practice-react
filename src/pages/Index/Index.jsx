@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Index() {
+export default function IndexPage() {
   return (
     <ul>
       <li>
@@ -8,6 +8,9 @@ export default function Index() {
       </li>
       <li>
       <Link to="/articles">Articles</Link>
+      </li>
+      <li>
+      <Link to="/media-queries">Media Queries</Link>
       </li>
     </ul>
   );

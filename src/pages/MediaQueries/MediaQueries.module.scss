@@ -1,0 +1,92 @@
+.example-1 {
+
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+    gap: 20px;
+
+    // container queries
+    container-type: inline-size;
+    container-name: cardContainer;
+
+    div {
+        width: 1280px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        border: 1px solid black;
+        position: relative;
+
+        //  стили для ширины экрана 1280 и больше
+        &::after{
+            content: '1280px';
+        }
+
+        @media (max-width: 1279px) {
+            width: 1024px;
+
+            &::after{
+                content: '1024px';
+            }
+            //  стили для ширины экрана 1024 и больше
+        }
+
+
+        // math operand
+        @media (width <=1279px) {
+            background-color: rosybrown;
+            &::after{
+                content: '1024px';
+            }
+            //  стили для ширины экрана 1024 и больше
+        }
+
+        @media (max-width: 1023px) {
+            width: 768px;
+            &::after{
+                content: '768px';
+            }
+            //  стили для ширины экрана 768 и больше
+        }
+
+        @media (max-width: 767px) {
+            width: 545px;
+            &::after{
+                content: '545px';
+            }
+            //  стили для ширины экрана 545 и больше
+        }
+
+        @media (max-width: 544px) {
+            width: 100px;
+            &::after{
+                content: '0px';
+            }
+            //  стили для ширины экрана 0 и больше
+        }
+
+
+        // height
+        @media (max-height: 767px) {
+            &::after{
+                content: 'max-height: 767px';
+            }
+            //  стили для высоты 0 и больше
+        }
+
+
+        // container queries
+        @container (max-width: 767px) {
+            background-color: black;
+            color: white;
+            &::after{
+                content: 'container max-width: 767px';
+            }
+        }
+
+    }
+}
