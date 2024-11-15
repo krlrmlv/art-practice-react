@@ -24,7 +24,7 @@ export default function MetaTags({
       ) : null}
 
       {/* OG image tags */}
-      <meta property="og:image" content={"logo192.png"} />
+      <meta property="og:image" content={"https://krlrmlv.github.io/art-practice-react/logo192.png"} />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="192" />
       {title ? (
