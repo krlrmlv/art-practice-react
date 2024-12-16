@@ -12,19 +12,12 @@ export default function ArticleItemPage() {
     const scrollY = window.scrollY; // custom hook
     const availableHeight = pageHeight - viewPortHeight;
     const percent = (scrollY / availableHeight) * 100;
-    
+
     progressRef.current.value = percent;
   };
 
   const throttleCalculate = throttle(calculate, 50);
-
-
-  // useEffect(() => {
-  //   if(progress){
-  //     console.log("progress", progress.value);
-  //   }
-  // }, [progressRef]);
-
+  
   useEffect(() => {
     throttleCalculate();
 
