@@ -1,0 +1,29 @@
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    height: 10px;
+    transition: 0.3s;
+    background-color: transparent;
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: transparent;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: transparent;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #ffd829;
+  }
+  
+  .article {
+    width: 720px;
+    margin: 100px auto;
+  }
+  

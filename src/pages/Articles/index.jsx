@@ -1,5 +1,5 @@
-import ArticleGrid from "../../components/ArticleGrid/ArticleGrid";
-import MetaTags from "../../ui/MetaTags/MetaTags";
+import ArticleGrid from "@/components/ArticleGrid/ArticleGrid";
+import MetaTags from "@/ui/MetaTags/MetaTags";
 
 export default function ArticlePage() {
   return (

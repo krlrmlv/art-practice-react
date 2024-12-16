@@ -5,6 +5,7 @@ import PortalPage from './pages/Portal/Portal';
 import IndexPage from './pages/Index/Index';
 import MediaQueriesPage from './pages/MediaQueries/Index';
 import { HelmetProvider } from 'react-helmet-async';
+import ArticleItemPage from './pages/ArticleItem';
 
 
 const router = createHashRouter([
@@ -15,6 +16,10 @@ const router = createHashRouter([
   {
     path: "/articles",
     element: <ArticlePage />,
+  },
+  {
+    path: "/articles/:articleId",
+    element: <ArticleItemPage />,
   },
   {
     path: "/portal",
