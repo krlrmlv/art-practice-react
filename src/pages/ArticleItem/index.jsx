@@ -16,9 +16,9 @@ export default function ArticleItemPage() {
     progressRef.current.value = percent;
   };
 
-  const throttleCalculate = throttle(calculate, 50);
-  
   useEffect(() => {
+    const throttleCalculate = throttle(calculate, 50);
+
     throttleCalculate();
 
     window.addEventListener("scroll", throttleCalculate);
