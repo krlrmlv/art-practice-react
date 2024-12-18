@@ -1,5 +1,5 @@
 import './App.css';
-import { createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
 import ArticlePage from './pages/Articles';
 import PortalPage from './pages/Portal/Portal';
 import IndexPage from './pages/Index/Index';
@@ -9,7 +9,7 @@ import ArticleItemPage from './pages/ArticleItem';
 import NotFound from './pages/404';
 
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <IndexPage />,
@@ -34,7 +34,9 @@ const router = createHashRouter([
     path: "*",
     element: <NotFound />,
   },
-]);
+], {
+  basename: process.env.REACT_APP_PUBLIC_URL
+});
 
 function App() {
   return (
