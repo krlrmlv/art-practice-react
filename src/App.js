@@ -1,5 +1,5 @@
 import './App.css';
-import { createBrowserRouter, createHashRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ArticlePage from './pages/Articles';
 import PortalPage from './pages/Portal/Portal';
 import IndexPage from './pages/Index/Index';
