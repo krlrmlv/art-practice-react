@@ -6,6 +6,7 @@ import IndexPage from './pages/Index/Index';
 import MediaQueriesPage from './pages/MediaQueries/Index';
 import { HelmetProvider } from 'react-helmet-async';
 import ArticleItemPage from './pages/ArticleItem';
+import NotFound from './pages/404';
 
 
 const router = createHashRouter([
@@ -28,6 +29,10 @@ const router = createHashRouter([
   {
     path: "/media-queries",
     element: <MediaQueriesPage />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

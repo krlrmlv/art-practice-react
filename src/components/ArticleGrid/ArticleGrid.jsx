@@ -1,12 +1,11 @@
-import articlesDB from '../../database/articles.json'
 import ArticleCard from '../ArticleCard/ArticleCard';
-const articlesList = articlesDB.data;
 
-export default function ArticleGrid() {
+export default function ArticleGrid({list}) {
+  if(!list) return
   return (
     <div>
       { 
-        articlesList.map((element, index) => 
+        list.map((element, index) => 
           <ArticleCard {...element} index={index} key={element.id} />
          )
       }

@@ -1,3 +1,8 @@
+.root{
+  width: 720px;
+  margin: 100px auto;
+}
+
 .progress {
     position: fixed;
     left: 0;
@@ -23,7 +28,11 @@
   }
   
   .article {
-    width: 720px;
-    margin: 100px auto;
+   
   }
   
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
