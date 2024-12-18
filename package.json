@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "craco start PUBLIC_URL=/",
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject"
@@ -40,7 +40,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://krlrmlv.github.io/art-practice-react",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^7.1.0"
