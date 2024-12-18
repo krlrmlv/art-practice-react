@@ -38,6 +38,9 @@ const router = createBrowserRouter([
   basename: process.env.REACT_APP_PUBLIC_URL
 });
 
+console.log('process.env.REACT_APP_PUBLIC_URL',process.env.REACT_APP_PUBLIC_URL);
+
+
 function App() {
   return (
     <div className="App">
